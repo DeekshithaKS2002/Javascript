@@ -1,0 +1,206 @@
+// JS Variables:
+let carName = "Volvo";
+let x = 50;
+let y = 10;
+let z = x + y;
+let firstName = "John", lastName = "Doe", age = 35;
+let bikeName = "Honda";
+
+// JS Operators:
+alert(10 * 5);
+alert(10 / 2);
+alert(15 % 9);
+x = 10;
+y = 5;
+x += y;
+x = 10;
+y = 5;
+x *= y;
+
+// JS Datatypes:
+let length = 16; // Number
+let lastName = "Johnson"; // String
+const x = { // Object
+  firstName: "John",
+  lastName: "Doe"
+};                        
+
+// JS Functions:
+function myFunction() {
+  alert("Hello World!");
+}
+myFunction();
+
+// JS Objects:
+const person = {
+  firstName: "John",
+  lastName: "Doe"
+};
+alert(person.firstName);
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  country: "Norway"
+};
+const person = {
+  name: "John", 
+  age: 50
+};
+alert(person.name + " is " + person.age);
+
+// JS Events:
+<button onclick="alert('Hello')">Click me.</button>
+<button onclick="myFunction()">Click me.</button>
+<div onmouseover="this.style.backgroundColor='red'">myDIV.</div>
+
+// JS Strings:
+let txt = "Hello World!";
+let x = txt.length;
+alert(x);
+let txt = "We are \'Vikings\'";
+alert(txt);
+let str1 = "Hello ";
+let str2 = "World!";
+alert(str1+ str2);
+
+// JS String Methods:
+let txt = "Hello World!";
+txt = txt.toUpperCase();
+let txt = "I can eat bananas all day";
+let x = txt.slice(10, 17);
+let txt = "Hello World";
+txt = txt.replace("Hello", "Welcome");
+let txt = "Hello World";
+txt = txt.toUpperCase();
+let txt = "Hello World";
+txt = txt.toLowerCase();
+
+// JS Arrays:
+const cars = ["Saab", "Volvo", "BMW"];
+let x = cars[1];
+const cars = ["Volvo", "Jeep", "Mercedes"];
+cars[0] = "Ford";
+const cars = ["Volvo", "Jeep", "Mercedes"];
+alert(cars.length);
+
+// JS Array Methods:
+const fruits = ["Banana", "Orange", "Apple"];
+fruits.pop();
+const fruits = ["Banana", "Orange", "Apple"];
+fruits.push("Kiwi");
+const fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+fruits.splice(1, 2);
+
+// JS Array Sort:
+const fruits = ["Banana", "Orange", "Apple", "Kiwi"];
+fruits.sort();
+
+// JS Dates:
+const d = new Date();
+alert(d);
+const d = new Date();
+year = d.getFullYear();
+const d = new Date();
+month = d.getMonth();
+const d = new Date();
+d.setFullYear(2020);
+
+// JS Math:
+let r = Math.random();
+let x = Math.max(10, 20);
+let x = Math.round(5.3);
+let x = Math.sqrt(9);
+
+// JS Comparisons:
+x = 10;
+y = 5;
+alert(x > y);
+x = 10;
+y = 10;
+alert(x == y);
+x = 10;
+y = 5;
+alert(x != y);
+var age = n;
+var voteable = (age < 18) ? "Too young" : "Old enough";
+alert(voteable);
+
+// JS Conditions:
+if (x > y) {
+  alert("Hello World");
+}
+if(x > y) {
+  alert("Hello World");
+} 
+else
+{
+  alert("Goodbye");
+}
+
+// JS Switch:
+switch(fruits) {
+  case "Banana":
+    alert("Hello")
+    break;
+  case "Apple":
+    alert("Welcome")
+    break;
+  default:
+    alert("Neither");
+}
+
+// JS For Loops:
+for (i = 0; i < 10; i++) {
+  console.log(i);
+}
+const fruits = ["Apple", "Banana", "Orange"];
+for (x of fruits) {
+  console.log(x);
+}
+
+// JS While Loops:
+let i = 0;
+while (i < 10) {  
+  console.log(i);
+  i++
+}
+let i = 0;
+while (i < 10) {
+  console.log(i);
+  i = i + 2;
+}
+
+// JS Break Loops:
+for (i = 0; i < 10; i++) {
+  console.log(i);
+  if (i == 5) {
+    break;
+  }
+}  
+for (i = 0; i < 10; i++) {
+  if (i == 5) {
+    continue;
+  }
+  console.log(i);
+}
+
+// JS HTML DOM:
+<p id="demo"></p>
+<script>document.getElementById("demo").innerHTML = "Hello";</script>
+<p id="demo"></p>
+<script>document.getElementsByTagName("p")[0].innerHTML = "Hello";</script>
+<p class="test"></p>
+<p class="test"></p>
+<script>document.getElementsByClassName("test")[0].innerHTML = "Hello";</script>
+<img id="image" src="smiley.gif">
+<script>document.getElementById("image").src = "pic_mountain.jpg";</script>
+<input type="text" id="myText" value="Hello">
+<script>document.getElementById("myText").value = "Have a nice day!";</script>
+<p id="demo"></p>
+<script>document.getElementById("demo").style.color = "red";</script>
+<p id="demo"></p>
+<script>document.getElementById("demo").style.fontSize = "40px";</script>
+<p id="demo"></p>
+<script>document.getElementById("demo").style.display = "none";</script>
+<button id="demo">Click me1</button>
+<script>document.getElementById("demo").addEventListener("click", myFunction);</script>
